@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="n&#250;mero &#237;mpar ou par flow"/>
+        <attribute name="authors" value="DES-I1HS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-07 01:28:24 "/>
+        <attribute name="created" value="REVTLUkxSFM7RVNONTEyTjlOVEI3NzQ7MjAyNS0wNC0wNzsiMDE6MTg6MTYgIjsyNjQx"/>
+        <attribute name="edited" value="REVTLUkxSFM7RVNONTEyTjlOVEI3NzQ7MjAyNS0wNC0wNzsiMDE6Mjg6MjQgIjsxOzI3NDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Variavel numero ir&#225; amarzenar um n&#250;mero par ou &#237;mpar"/>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um n&#250;mero qualquer:&quot;" newline="True"/>
+            <input variable="numero"/>
+            <comment text="SE ir&#225; distinguir se o n&#250;mero &#233; &#237;mpar ou par atrav&#233;s da equa&#231;&#227;o n:2, se a equa&#231;&#227;o der 0, o n&#250;mero &#233; par. Caso sobre n&#250;mero na divis&#227;o, o n&#250;mero &#233; &#237;mpar"/>
+            <if expression="numero%2 == 0">
+                <then>
+                    <output expression="&quot;Este n&#250;mero &#233; par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Este n&#250;mero &#233; &#237;mpar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

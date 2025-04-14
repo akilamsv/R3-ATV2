@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="desconto da compra flow"/>
+        <attribute name="authors" value="DES-I1HS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-07 01:57:04 "/>
+        <attribute name="created" value="REVTLUkxSFM7RVNONTEyTjlOVEI3NzQ7MjAyNS0wNC0wNzsiMDE6Mjk6MTEgIjsyNjM4"/>
+        <attribute name="edited" value="REVTLUkxSFM7RVNONTEyTjlOVEI3NzQ7MjAyNS0wNC0wNzsiMDE6NTc6MDQgIjsxOzI3NDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="A variavel prCompra ir&#225; armazenar o pre&#231;o da compra; descontoTTL o valor do desconto subtraido pelo pre&#231;o da compra; desconto o valor do desconto "/>
+            <declare name="prCompra, descontoTTL, desconto" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o valor da compra:&quot;" newline="True"/>
+            <input variable="prCompra"/>
+            <assign variable="desconto" expression="(prCompra*0.1)"/>
+            <assign variable="descontoTTL" expression="(prCompra)-(prCompra*0.1)"/>
+            <comment text="&quot;SE ir&#225; distinguir se o valor da compra possui ou n&#227;o um desconto (ela ir&#225; possuir desconto se o pre&#231;o for maior que 100)&quot;"/>
+            <if expression="prCompra &gt;= 100">
+                <then>
+                    <output expression="&quot;Oba! voc&#234; conseguiu um desconto de &quot;&amp;desconto&amp;&quot; reais, o valor do desconto total &#233; &quot;&amp;descontoTTL&amp;&quot;!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O valor da compra &#233; &amp;prCompra&amp;&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
